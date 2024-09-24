@@ -1,0 +1,14 @@
+/Users/emrahelis/Diziler(Array)/bin/Debug/net8.0/Diziler(Array)
+/Users/emrahelis/Diziler(Array)/bin/Debug/net8.0/Diziler(Array).deps.json
+/Users/emrahelis/Diziler(Array)/bin/Debug/net8.0/Diziler(Array).runtimeconfig.json
+/Users/emrahelis/Diziler(Array)/bin/Debug/net8.0/Diziler(Array).dll
+/Users/emrahelis/Diziler(Array)/bin/Debug/net8.0/Diziler(Array).pdb
+/Users/emrahelis/Diziler(Array)/obj/Debug/net8.0/Diziler(Array).GeneratedMSBuildEditorConfig.editorconfig
+/Users/emrahelis/Diziler(Array)/obj/Debug/net8.0/Diziler(Array).AssemblyInfoInputs.cache
+/Users/emrahelis/Diziler(Array)/obj/Debug/net8.0/Diziler(Array).AssemblyInfo.cs
+/Users/emrahelis/Diziler(Array)/obj/Debug/net8.0/Diziler(Array).csproj.CoreCompileInputs.cache
+/Users/emrahelis/Diziler(Array)/obj/Debug/net8.0/Diziler(Array).dll
+/Users/emrahelis/Diziler(Array)/obj/Debug/net8.0/refint/Diziler(Array).dll
+/Users/emrahelis/Diziler(Array)/obj/Debug/net8.0/Diziler(Array).pdb
+/Users/emrahelis/Diziler(Array)/obj/Debug/net8.0/Diziler(Array).genruntimeconfig.cache
+/Users/emrahelis/Diziler(Array)/obj/Debug/net8.0/ref/Diziler(Array).dll
