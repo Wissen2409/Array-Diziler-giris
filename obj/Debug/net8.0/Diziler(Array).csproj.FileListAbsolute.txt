@@ -12,3 +12,4 @@
 /Users/emrahelis/Diziler(Array)/obj/Debug/net8.0/Diziler(Array).pdb
 /Users/emrahelis/Diziler(Array)/obj/Debug/net8.0/Diziler(Array).genruntimeconfig.cache
 /Users/emrahelis/Diziler(Array)/obj/Debug/net8.0/ref/Diziler(Array).dll
+/Users/emrahelis/Diziler(Array)/obj/Debug/net8.0/Diziler(Array).sourcelink.json
