@@ -25,7 +25,7 @@
 
 // int tipinde bir dizi tanımlayalım
 
-int[] intDizi =new int[3];
+//int[] intDizi =new int[3];
 
 // 3 değeri dizinin taşıyacağı eleman sayısını tanımlar.
 
@@ -38,7 +38,7 @@ int[] intDizi =new int[3];
 
 // int tipinde dizinin içerisine eleman atalım
 // 1. index'e değer atayalım
-intDizi[1]=80;
+//intDizi[1]=80;
 
 //Console.WriteLine(intDizi[1]);
 
@@ -46,8 +46,8 @@ intDizi[1]=80;
 // int tipinden bir dizi string tipinde bir değer alamaz
 //intDizi[3]="metin";
 
-byte b =10;
-intDizi[2]=b;
+//byte b =10;
+//intDizi[2]=b;
 
 // bir dönüşüm işlemi yapıldı(Bilinçsiz dönüşüm)
 
@@ -119,7 +119,7 @@ for(int i=0;i<10;i++){
 
 // 100 elamanlı bir string dizi yapıp, dizinin her elemanına, 
 //10 karakterli random kelime yazdırınız
-string[] randomKelime = new string[100];
+/*string[] randomKelime = new string[100];
 Random rnd = new Random();
 for(int i=0;i<randomKelime.Length;i++){
 
@@ -133,4 +133,47 @@ for(int i=0;i<randomKelime.Length;i++){
 }
 for(int i=0;i<randomKelime.Length;i++){
     Console.WriteLine(randomKelime[i]);
+}*/
+
+// Sayısal loto oyunu 
+// kullanıcıdan 6 adet 1-49 arasında sayı alınız ve bir diziye doldurunuz
+// daha sonra, 6 adet 1-49 arasında random sayı üretiniz ve diziye doldurunuz
+
+// bu iki diziyi birbiri ile karşılaştırınız
+
+// iki dizide de olan sayıları ekrana yazdırınız yada, ekrana şu kadar doğru tahmin ettiniz yazdırınız
+
+
+/*
+0 - 5
+
+6 - 5
+*/
+
+
+int[] random = new int[6];
+int[] kullanici = new int[6];
+
+Random rnd = new Random();
+for(int i = 0; i < random.Length;i++){
+
+    // hem kullanıcıdan alalım, hemde random dolduralım
+
+    Console.WriteLine("{0}. sayı tahminini giriniz",i+1);
+    kullanici[i]=int.Parse(Console.ReadLine());
+
+    // random sayıyı üretip diziye basalım
+    random[i]=rnd.Next(1,49);
+}
+// iki diziyi kartezyen karşılaştırıp doğru sayı var yok kontrolü yapalım
+for(int i = 0;i<random.Length;i++){
+
+    for(int j=0;j<random.Length;j++){
+
+        if(random[i]==kullanici[j]){
+
+            Console.WriteLine("Doğru tahmin edilen sayı : {0}",random[i]);
+
+        }
+    }
 }
