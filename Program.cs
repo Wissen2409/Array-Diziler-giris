@@ -203,7 +203,7 @@ for(int i = 0;i<random.Length;i++){
 // datetime konusu 
 // for döngüsünde bir hafta bir hafta artırarak devem etmek
 
-for(int i = 0; i < 1000;i++){
+/*for(int i = 0; i < 1000;i++){
 
     
     Console.WriteLine(DateTime.Now.AddDays(7).ToString());
@@ -213,7 +213,49 @@ for(int i = 0; i < 1000;i++){
     // Sleep fonksiyonu milisaniye cinsinden değer alır.
 
     // örnek 1000 girdiğimizde derleyici alttaki kodu çalıştırması için 1 saniye bekleyecektir.
-    
+
     System.Threading.Thread.Sleep(5000);
 
+}*/
+
+// ekrandan aldığınız 10 elemanlı diziyi ekrandan aldığınız değerlerle doldurunuz
+// daha sonra bu diziyi ters çeviriniz
+
+// 1-5-7-9-10
+// ters .
+// 10-9-7-5-1
+
+int[] dizi = new int[10];
+int[] tersDizi = new int[dizi.Length];
+for (int i = 0;i<dizi.Length;i++){
+
+    Console.WriteLine("{0}. elemanı giriniz",i);
+    dizi[i]=int.Parse(Console.ReadLine());
 }
+int sayac = 0;
+for (int i = tersDizi.Length - 1; i >= 0 ; i--)
+{
+     tersDizi[sayac]=dizi[i];
+     sayac++;
+}
+// 
+// ekrandan verileri aldık söz konusu diziyi ters çevirelim
+
+// Ters diziyi ekrana yazdıralım
+
+for (int i = 0;i<dizi.Length;i++){
+
+    Console.WriteLine("Düz dizi : {0}",dizi[i]);
+    Console.WriteLine("Ters Dizi : {0}",tersDizi[i]);
+
+}
+
+// 1,2,3,4,5
+// 5,4,3,2,1
+
+/*
+dizi[5] - tersDizi[0]
+dizi[4] - tersDizi[1]
+dizi[3]-  tersDizi[2]
+
+*/

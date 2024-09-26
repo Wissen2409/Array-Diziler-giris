@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Diziler(Array)")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e300dddce022361fd45ea34bd578ba2b26cf9843")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e56ae909a05e08596cc00013fe8f7e52c43458fb")]
 [assembly: System.Reflection.AssemblyProductAttribute("Diziler(Array)")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Diziler(Array)")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
