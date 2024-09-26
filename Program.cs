@@ -135,6 +135,12 @@ for(int i=0;i<randomKelime.Length;i++){
     Console.WriteLine(randomKelime[i]);
 }*/
 
+
+
+
+
+
+// Örnek : 
 // Sayısal loto oyunu 
 // kullanıcıdan 6 adet 1-49 arasında sayı alınız ve bir diziye doldurunuz
 // daha sonra, 6 adet 1-49 arasında random sayı üretiniz ve diziye doldurunuz
@@ -151,7 +157,7 @@ for(int i=0;i<randomKelime.Length;i++){
 */
 
 
-int[] random = new int[6];
+/*int[] random = new int[6];
 int[] kullanici = new int[6];
 
 Random rnd = new Random();
@@ -176,4 +182,38 @@ for(int i = 0;i<random.Length;i++){
 
         }
     }
+}
+*/
+
+
+// Örnek 
+// 6 tane sayı belirleyip, 30 yıl boyunca aynı sayıya oynamak
+// altı sayı belirleyip, devamlı farklı random sayılar çekip, bu sayılar ile karşılaştırın
+// her bir for bir haftayı belirlesin Datetime kullanabilirsiniz
+// bakım bakalım, kaç hafta aynı sayılara oynayıp, 5 sayı biliyorsunuz
+
+// haftayı for döngüsü olarak alınız
+// bir hafta 15 tl olarak, hesaplayın, 5 bulduğunuz haftayı ve ne kadar para ödediğinizi 
+// ekrana yazdırınız
+// Datetime kullanarak her hafta yı dateyime olarak atayın, 5 tutturma zamanı hangi yılda olacak 
+// ve kaç para harcamış olacaksınız bunu ekrana yansıtın
+
+// 
+
+// datetime konusu 
+// for döngüsünde bir hafta bir hafta artırarak devem etmek
+
+for(int i = 0; i < 1000;i++){
+
+    
+    Console.WriteLine(DateTime.Now.AddDays(7).ToString());
+     
+
+    // Derleyici istediğiniz kadar bekletebilirsiniz
+    // Sleep fonksiyonu milisaniye cinsinden değer alır.
+
+    // örnek 1000 girdiğimizde derleyici alttaki kodu çalıştırması için 1 saniye bekleyecektir.
+    
+    System.Threading.Thread.Sleep(5000);
+
 }
