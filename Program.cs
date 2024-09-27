@@ -225,7 +225,7 @@ for(int i = 0;i<random.Length;i++){
 // ters .
 // 10-9-7-5-1
 
-int[] dizi = new int[10];
+/*int[] dizi = new int[10];
 int[] tersDizi = new int[dizi.Length];
 for (int i = 0;i<dizi.Length;i++){
 
@@ -259,3 +259,72 @@ dizi[4] - tersDizi[1]
 dizi[3]-  tersDizi[2]
 
 */
+
+// Diziler ile ilgili hazır fonksiyonlar
+
+// Diziler ile ilgili yapılacak işlemleri yapan hazır fonksiyonlar bulunmaktadır.
+
+int[] ints= new int[100];
+ints[89]=10;
+
+
+// diziler ile ilgili hazır fonksiyonara Array sınıfı üzerinden erişebilirsiniz
+
+
+// girmiş olduğumuz değerin hangi index numarasında olduğu söyler.
+// Dizi içerisinde arama yapan fonksiyondur
+int hangiIndex = Array.IndexOf(ints,10);
+Console.WriteLine(hangiIndex);
+// hangi değerden birden fazla index'te varsa, aranan sayının ilk bulunduğu index'i verecek
+
+// IndexOf fonksiyonu ile araba yaptığımız değer dizinin içerisinde yoksa, -1 değerini verir
+
+// IndexOf'un tersine, aranan değerin görüldüğü en son index numarası verir.
+// Özetle  : 9. indexte 10 değeri ve 50. indexte 10 değeri var. 10 değerini lastindexof ile aratırsak bize 50. index numarasını verir.
+//Array.LastIndexOf();
+
+
+
+int[] reverseArray = new int[5];
+reverseArray[0]=7;
+reverseArray[1]=80;
+reverseArray[2]=6;  
+reverseArray[3]=2;
+
+// yukarıdaki diziyi Array.Reverse ile ters çevirelim 
+// ters çevirmemizi istediği diziyi aldı ve ters çevirdi.
+//Array.Reverse(reverseArray);
+//for(int i=0;i<reverseArray.Length;i++){
+//    Console.WriteLine(reverseArray[i]);
+//}
+
+// Tarihe not : Fonksiyonlar konusu : Geriye değer döndürmeyen fonksiyonlar ile ilgili konuşcaz.
+// Cumartesi günü dizi konusun arasında işleyeceğimiz konu 
+// Değer tip ve Referans tip konusu
+
+// Array.Sort diziyi sıralar(rakamları küçükten büyüğe, harfleri ise, alfabetik sıraya göre sıralar)
+/*Array.Sort(reverseArray);
+for(int i=0;i<reverseArray.Length;i++){
+    Console.WriteLine(reverseArray[i]);
+}*/
+
+// Dizi sıralamak
+// Kabarcık Sıralama(Bubble Sorting)
+// Hızlı Sıralama ( Quick Sorting)
+
+// Ödev : Bubble sorting ile 20 elemanlı bir diziyi sıralayınız
+
+
+// Array.Clear diziyi temizlemek için kullanılır(Dizi içerisindeki tüm elemanlar siliniz);
+//Array.Clear(reverseArray);
+
+// Array.Copy
+// bir dizinin kopyasını oluşturmak için Array.Copy fonksiyonu kullanılabilir
+
+
+int[] destinationArray = new int[5];
+Array.Copy(reverseArray,destinationArray,reverseArray.Length);
+for(int i=0; i<reverseArray.Length;i++){
+    Console.WriteLine(destinationArray[i]);
+
+}
