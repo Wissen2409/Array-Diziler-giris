@@ -1,4 +1,4 @@
-﻿// Diziler : 
+// Diziler : 
 // Birden fazla aynı tipte veriyi taşıyabilen yapılara dizi(Array) denir.
 
 // Örnek : 
@@ -485,3 +485,33 @@ Console.WriteLine(deger[0]);
 // Unutmamanız için tekrar
 // DİKKAT !!!! String bir char dizisidir.
 
+// string'in char dizisi olması ile ilgili bir örnek yapalım
+// 10 adet ismin olduğu bir dizi alınız kullanıcıdan,
+// dizi giriş tamamlandıktan sonra, 
+// dizi içerisinde isimlerin, tersten yazılışlarını ekrana yazdırınız
+
+string[] names = new string[10];
+for(int i =0;i<10;i++){
+
+    Console.WriteLine("{0}. ismi giriniz",i+1);
+    names[i]=Console.ReadLine();
+}
+for(int i =0;i<names.Length;i++){
+// dizi içerisinde dönmek için
+    string ters ="";
+   for (int j = names[i].Length - 1; j>= 0 ; j--)
+   {
+        ters+=names[i][j];
+        // i = 0  = Ali - > j=2 = i
+        // i = 0  = Ali - > j=1 = l
+   }
+   Console.WriteLine(ters);
+}
+
+//Ali    i = 0 
+//Veli   i = 1
+//Mehmet i = 2
+
+// A  j = 0
+// l  j = 1
+// i =j = 2
